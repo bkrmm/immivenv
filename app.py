@@ -15,7 +15,7 @@ from langchain_core.runnables import RunnablePassthrough
 st.set_page_config(page_title="📘 Gemini RAG Chatbot", layout="wide")
 st.title("📘 RAG Chatbot — Gemini for Answers, MiniLM for Embeddings")
 
-GOOGLE_API_KEY = ""
+GOOGLE_API_KEY = "GOOGLE_API_KEY = "AIzaSyDCnAFTq5tS3rCrYb7M5jP90IuvitcgFLQ""
 
 # =============================
 # Load or create FAISS vector store
@@ -195,4 +195,5 @@ if user_query:
 for q, a in st.session_state["history"]:
     st.chat_message("user").write(q)
     st.chat_message("assistant").write(a)
+
 
